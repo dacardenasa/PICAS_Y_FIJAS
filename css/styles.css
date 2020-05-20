@@ -1,0 +1,89 @@
+/* FUENTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* ESTILOS GENERALES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7F5F6;
+  font-family: 'Roboto', sans-serif;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+}
+
+table tr {
+  width: 90px;
+}
+
+table tr th,
+table tr td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+input[type="number"] {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.flex-content {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px auto;
+  padding: 25px;
+  text-align: center;
+  z-index: 1;
+  left: 25%;
+}
+
+.titulo {
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+.win {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 300ms ease;
+  position: absolute;
+  z-index: 2;
+}
+
+.win .result {
+  margin-top: 30vh;
+}
+
+.win .result span {
+  display: block;
+  color: white;
+  font-size: 100px;
+  text-align: center;
+}
+
+.win .result .close a {
+  display: block;
+  width: 20%;
+  background-color: #FF5301;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.text-error {
+  color: red;
+}
