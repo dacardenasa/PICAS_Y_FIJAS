@@ -15,7 +15,6 @@ var generateNumber = function(){
 };
 
 // Function to validate repeat numbers IA and user input
-
 var valRepeatNumbers = function(data){
   // Var to save number of times each number is repeat into numbersVal var
   var contadorNumber = [];
@@ -49,18 +48,14 @@ var loadGame = function(){
   // Function  to check if generated number has repeated numbers
   var checkNumber = function(){
     // Save generated number
-    var result;
     numbersVal = generateNumber();
     
     return valRepeatNumbers(numbersVal);
   };
-  
+
   // do while to control checknumber function return a number which has no repeat numbers 
-  
   do {
-  
   checkNumber();
-  
   } while ( checkNumber() );
   
   // init vars
@@ -95,7 +90,6 @@ var startGame = function(input){
     picas = 0;
     fijas = 0;
   }
-
 }
 
 $(document).ready(function(){
@@ -109,6 +103,7 @@ $(document).ready(function(){
       } else {
         $('.titulo p span').removeAttr('class');
         startGame($(this).val());
+        $('#number').val('');
       }
     }
   });
